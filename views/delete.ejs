@@ -1,0 +1,12 @@
+<%- include('partials/header') -%>
+     
+<div class="container px-5 my-5">
+    <h1 class="pl-3">Delete Post</h1>
+   <form action="/delete" method="POST">
+        <label class="mx-3 mt-3">Title</label><br>
+        <input type="text" name="title" autocomplete="off" class="form-control mx-3 w-75" placeholder="Enter Title"><br>
+        <button class="btn bg-cyan text-light mb-3 ml-3" type="submit">Delete</button>
+    </form>
+</div>
+    
+<%- include('partials/footer') -%>

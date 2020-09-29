@@ -1,10 +1,17 @@
 <%- include('partials/header') -%>
     <div class="container px-5 my-5">
     <h1 class="pl-3">Home</h1>
-    <p class="px-3"><%= homeContent %></p>
+    <p class="px-3"><%= homeContent %></p> 
+    <div class="d-flex">
+        <a class=" ml-3 btn bg-cyan text-light mb-3" href="/edit">Edit</a>
+        <a class="btn bg-cyan text-light mb-3 ml-3" href="/delete">Delete</a>
+    </div>
     <% homePosts.forEach((homePost)=>{ %>
-        <h2 class="pl-3"><%= homePost.Title %></h2>
-        <p class="px-3"><%= homePost.Data.slice(0,100) %> ...<a href="/posts/<%= homePost.Title %>">Read More</a></p>
+        <h2 class="pl-3"><%= homePost.title %></h2>
+        <p class="px-3"><%= homePost.postdata.slice(0,100) %> ...<a href="/posts/<%= homePost.title %>">Read More</a></p>
+
+      
      <% }) %>
+        
     </div>
 <%- include('partials/footer') -%>

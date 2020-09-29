@@ -1,0 +1,16 @@
+<%- include('partials/header') -%>
+     
+<div class="container px-5 my-5">
+    <h1 class="pl-3">Edit Post</h1>
+   <form action="/edit" method="POST">
+        <label class="mx-3 mt-3">Title</label><br>
+        <input type="text" name="currtitle" autocomplete="off" class="form-control mx-3 w-75" placeholder="Enter current Title"><br>
+        <input type="text" name="newtitle" autocomplete="off" class="form-control mx-3 w-75" placeholder="Enter new Title"><br>
+        <label class="mx-3 mt-3">Post</label><br>
+        <textarea name="currpost" class="form-control mx-3 w-75" placeholder="Enter current Post" rows="5"></textarea><br>
+        <textarea name="newpost" class="form-control mx-3 w-75" placeholder="Enter new Post" rows="5"></textarea><br>
+        <button class="btn bg-cyan text-light mb-3 ml-3" type="submit">Edit</button>
+    </form>
+</div>
+    
+<%- include('partials/footer') -%>
