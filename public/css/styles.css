@@ -1,0 +1,31 @@
+.publish{
+    border: 3px solid#343A40;
+    font-size: large;
+    border-radius: 0px;
+    font-weight: 500;
+    line-height: 1;
+    width: 120px;
+}
+label{
+    font-size: large;
+}
+.abs-footer{
+    position: fixed;
+    bottom: 0;
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+h1,h2{
+    font-weight: bolder;
+}
+.bg-cyan{
+   background-color:  #1abc9c;
+}
+
+.bg-nav{
+    background-color:  #f1f1e8;
+ }
+ .nav-link:hover{
+    color:  #1abc9c;
+ }
